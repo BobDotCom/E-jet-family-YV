@@ -19,4 +19,5 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.4.3
         with:
+          name: E-jet-family
           path: .

@@ -16,8 +16,11 @@ jobs:
       # - run: apt update && apt install xsltproc
       - name: Run build script
         run: ./build.sh
+      - name: Run release script
+        run: ./make-release.sh
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.4.3
         with:
           name: E-jet-family
-          path: .
+          path: release/E-jet-family
+          
